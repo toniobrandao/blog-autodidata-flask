@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url({{ url_for('static', filename='assets/img/about-bg.jpg') }})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Sobre mim</h1>
+                            <span class="subheading">Esse sou eu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Me chamo Antônio Brandão, sou formado em Engenharia de Produção pela PUC-Rio e atualmente Curso Pós Graduação, também na PUC-Rio, em Engenharia de Software.
+                            Essas dicas do site me ajudaram muito a aprender programação, a tocar piano, a tocar flauta e a ler livros. Espero que te ajude também!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include "footer.html" %}
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-91aed29341a59f8826b73d8c9509e2913d705e062c3a0f8e321b8ff889511fdb043413b42d19f9abef276d3a2fe3ed69"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
